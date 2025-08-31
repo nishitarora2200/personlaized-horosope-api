@@ -8,7 +8,5 @@ const historySchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-// Index for faster lookup by user and date
-historySchema.index({ userId: 1, date: -1 });
 
 module.exports = mongoose.model('History', historySchema);
