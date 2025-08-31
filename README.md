@@ -63,7 +63,7 @@ mongod --dbpath /path/to/mongodb/data
 ### 5. **Start Server**
 
 ```bash
-npm run dev
+npm start
 ```
 
 Server will run on:
@@ -104,3 +104,18 @@ http://localhost:3000
 * ✅ Add unit and integration tests (Jest).
 
 ---
+
+✅ Scaling Strategies
+
+Generate daily horoscope for each user in background jobs (e.g., using a queue system like Bull / RabbitMQ / Kafka).
+TTL-based caching (Redis) for quick access.
+
+**Microservices Architecture**
+
+Split content generation into a separate service.
+API service remains lightweight (only serves stored data).
+Use event-driven approach (e.g., Kafka) to trigger horoscope generation jobs.
+
+**Horizontal Scaling**
+
+Run multiple Node.js instances behind a load balancer.
