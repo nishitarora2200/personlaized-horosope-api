@@ -11,12 +11,12 @@ A Node.js backend service that provides personalized daily horoscopes based on t
 ---
 
 ## 📌 Features
-- ✅ User Signup & Login (JWT Authentication)
-- ✅ Auto-detect Zodiac Sign from Birthdate
-- ✅ Get Today's Horoscope (per user's zodiac)
-- ✅ View Last 7 Days' Horoscope History
-- ✅ Rate Limiting (5 requests/min per user)
-- ✅ API Documentation with Swagger
+- User Signup & Login (JWT Authentication)
+- Auto-detect Zodiac Sign from Birthdate
+- Get Today's Horoscope (per user's zodiac)
+- View Last 7 Days' Horoscope History
+- Rate Limiting (5 requests/min per user)
+- API Documentation with Swagger
 
 ---
 
@@ -46,7 +46,7 @@ npm install
 Create a `.env` file in the root folder and add:
 
 ```
-PORT=5000
+PORT=3000
 MONGO_URI=mongodb://127.0.0.1:27017/horoscope-db
 JWT_SECRET=your-secret-key
 JWT_EXPIRES_IN=7d
